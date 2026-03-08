@@ -61,6 +61,8 @@
     "application": "Aplikace",
     "newChat": "Nový chat",
     "newChatDesc": "Vytvořit nový chat.",
+    "newProject": "Nový projekt",
+    "newProjectDesc": "Otevřít dialog pro vytvoření projektu.",
     "toggleSidebar": "Přepnout postranní panel",
     "toggleSidebarDesc": "Zobrazit nebo skrýt postranní panel.",
     "zoomIn": "Přiblížit",
@@ -75,6 +77,8 @@
     "newLineDesc": "Vložit nový řádek.",
     "shiftEnter": "Shift + Enter",
     "navigation": "Navigace",
+    "search": "Hledání",
+    "searchDesc": "Otevřít dialog hledání.",
     "goToSettings": "Přejít do nastavení",
     "goToSettingsDesc": "Otevřít nastavení."
   },
@@ -284,7 +288,15 @@
     "chunkSize": "Velikost části (tokeny)",
     "chunkSizeDesc": "Přibližný maximální počet tokenů na část pro embeddingy.",
     "chunkOverlap": "Překryv (tokeny)",
-    "chunkOverlapDesc": "Překryv tokenů mezi po sobě jdoucími částmi."
+    "chunkOverlapDesc": "Překryv tokenů mezi po sobě jdoucími částmi.",
+    "parseMode": "Režim parsování",
+    "parseModeDesc": "Zvolte, jak budou parsované dokumenty přidávány do konverzací.",
+    "parseModeAuto": "Automaticky",
+    "parseModeInline": "Zahrnout do chatu",
+    "parseModeEmbeddings": "Ingestovat jako embeddingy",
+    "parseModePrompt": "Ptát se pokaždé",
+    "autoInlineThreshold": "Práh automatického vložení",
+    "autoInlineThresholdDesc": "Zlomek kontextu modelu použitý jako cutoff pro vkládání parsovaných souborů do lokálních modelů."
   },
   "dialogs": {
     "changeDataFolder": {

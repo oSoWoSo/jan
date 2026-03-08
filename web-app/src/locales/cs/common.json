@@ -9,6 +9,14 @@
   "settings": "Nastavení",
   "modelProviders": "Poskytovatelé modelů",
   "attachments": "Přílohy",
+  "attachmentEmbeddedIndicator": "Vloženo pro RAG",
+  "attachmentInjectedIndicator": "Vloženo do chatu",
+  "attachmentsIngestion": {
+    "description": "Vyberte, zda tyto soubory zahrnout přímo do chatu nebo je indexovat jako embeddingy místo toho.",
+    "inline": "Vložit do chatu",
+    "embeddings": "Použít embeddingy",
+    "title": "Vyberte způsob ingestu příloh"
+  },
   "interface": "Rozhraní",
   "privacy": "Soukromí",
   "keyboardShortcuts": "Klávesové zkratky",
@@ -108,6 +116,8 @@
   "providerAlreadyExists": "Poskytovatel s názvem \"{{name}}\" již existuje. Zvolte prosím jiný název.",
   "adjustFontSize": "Upravit velikost písma",
   "changeLanguage": "Změnit jazyk",
+  "claude_code": "Claude Code",
+  "clearRecent": "Vymazat",
   "editTheme": "Upravit motiv",
   "editCodeBlockStyle": "Upravit styl bloku kódu",
   "editServerHost": "Upravit hostitele serveru",
@@ -230,6 +240,10 @@
       "title": "Smazat všechna vlákna",
       "description": "Všechna vlákna budou smazána. Tuto akci nelze vrátit zpět."
     },
+    "deleteAllThreadsInProject": {
+      "title": "Smazat všechny konverzace",
+      "description": "{{count}} konverzací v \"{{projectName}}\" bude smazáno. Tuto akci nelze vrátit zpět."
+    },
     "deleteThread": {
       "description": "Opravdu chcete smazat toto vlákno? Tuto akci nelze vrátit zpět."
     },
@@ -277,7 +291,12 @@
       "updateButton": "Aktualizovat",
       "alreadyExists": "Projekt \"{{projectName}}\" již existuje",
       "createSuccess": "Projekt \"{{projectName}}\" byl úspěšně vytvořen",
-      "renameSuccess": "Projekt byl přejmenován z \"{{oldName}}\" na \"{{newName}}\""
+      "renameSuccess": "Projekt byl přejmenován z \"{{oldName}}\" na \"{{newName}}\"",
+      "assistant": "Asistent",
+      "selectAssistant": "Vyberte asistenta (volitelné)",
+      "noAssistant": "Bez asistenta",
+      "addAssistant": "Přidat asistenta",
+      "updateSuccess": "Projekt \"{{projectName}}\" byl úspěšně aktualizován"
     },
     "noConversationsIn": "Žádné konverzace v {{projectName}}",
     "startNewConversation": "Začněte novou konverzaci s {{projectName}} níže",
@@ -287,9 +306,19 @@
     "threads": "vlákna",
     "updated": "Aktualizováno:",
     "collapseProject": "Sbalit projekt",
+    "conversation": "Konverzace",
     "expandProject": "Rozbalit projekt",
+    "files": "Soubory",
+    "filesDescription": "Přidejte PDF, dokumenty nebo jiný text, na který chcete v tomto projektu odkazovat.",
+    "instructions": "Instrukce",
+    "instructionsDescription": "Přizpůsobte tón a styl odpovědi",
+    "manageInstructions": "Spravovat instrukce",
+    "new": "Nové projekty",
+    "noAssistantAssigned": "K tomuto projektu není přiřazen žádný asistent",
     "update": "Aktualizovat",
     "searchProjects": "Hledat projekty...",
+    "selectAssistant": "Vybrat asistenta",
+    "setup": "Nastavení",
     "noProjectsFound": "Nebyly nalezeny žádné projekty",
     "tryDifferentSearch": "Zkuste jiný vyhledávací výraz"
   },
@@ -373,6 +402,46 @@
     "threadRemovedFromProject": {
       "title": "Vlákno odebráno",
       "description": "Vlákno bylo úspěšně odebráno z \"{{projectName}}\""
+    },
+    "attachmentsDisabledInfo": {
+      "title": "Přílohy zakázány",
+      "description": "Přílohy jsou zakázány v Nastavení"
+    },
+    "deleteFailed": {
+      "title": "Mazání selhalo",
+      "description": "Nepodařilo se smazat soubor"
+    },
+    "fileAlreadyExists": {
+      "title": "Soubor již existuje",
+      "description": "Soubor je již přiložen k tomuto projektu"
+    },
+    "fileDeleted": {
+      "title": "Soubor smazán",
+      "description": "Soubor byl odstraněn z projektu"
+    },
+    "fileUploaded": {
+      "title": "Soubor nahrán",
+      "description": "Soubor byl úspěšně nahrán a indexován"
+    },
+    "uploadFailed": {
+      "title": "Nahrání selhalo",
+      "description": "Nepodařilo se nahrát soubor"
     }
-  }
+  },
+  "errors": {
+    "fileTooLarge": "Soubor je příliš velký",
+    "fileTooLargeDescription": "{{fileName}} překračuje limit {{maxFileSizeMB}}MB"
+  },
+  "files": {
+    "chunksCount": "{{count}} částí"
+  },
+  "injectedContentTitle": "Vložený obsah souboru",
+  "integrations": "Integrace",
+  "openclaw": "OpenClaw",
+  "remote_access": "Vzdálený přístup",
+  "searchThreads": "Hledat vlákna...",
+  "toClose": "zavřít",
+  "toNavigate": "navigovat",
+  "toSelect": "vybrat",
+  "viewInjectedContent": "Zobrazit vložený obsah"
 }
