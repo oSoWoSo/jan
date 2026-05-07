@@ -50,6 +50,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ai-sdk/google@npm:^2.0.0":
+  version: 2.0.72
+  resolution: "@ai-sdk/google@npm:2.0.72"
+  dependencies:
+    "@ai-sdk/provider": "npm:2.0.3"
+    "@ai-sdk/provider-utils": "npm:3.0.25"
+  peerDependencies:
+    zod: ^3.25.76 || ^4.1.8
+  checksum: 10c0/501df88a0cea33d296ac926f131512d525e46064ad436180cfe35003426080e80740428c3749f12e7b83d5c2f4e5b78e91b9ca31a1190a700bec034fc1b61fe2
+  languageName: node
+  linkType: hard
+
 "@ai-sdk/openai-compatible@npm:1.0.33, @ai-sdk/openai-compatible@npm:^1.0.28":
   version: 1.0.33
   resolution: "@ai-sdk/openai-compatible@npm:1.0.33"
@@ -100,6 +112,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ai-sdk/provider-utils@npm:3.0.25":
+  version: 3.0.25
+  resolution: "@ai-sdk/provider-utils@npm:3.0.25"
+  dependencies:
+    "@ai-sdk/provider": "npm:2.0.3"
+    "@standard-schema/spec": "npm:^1.0.0"
+    eventsource-parser: "npm:^3.0.6"
+  peerDependencies:
+    zod: ^3.25.76 || ^4.1.8
+  checksum: 10c0/6de8874c2b1459517a2d2a71a6a899b75a31d46312626b7ee1480363a085c07d95400bcc86a4bc768cc719ad91166435b2183566ce9985276be03b3a49ed20f9
+  languageName: node
+  linkType: hard
+
 "@ai-sdk/provider@npm:2.0.0":
   version: 2.0.0
   resolution: "@ai-sdk/provider@npm:2.0.0"
@@ -115,6 +140,15 @@ __metadata:
   dependencies:
     json-schema: "npm:^0.4.0"
   checksum: 10c0/3ec560c5b03401a1e3b8c73875f4258cb815668367157a3caa4d30f580ff5adffbba54ee52f875161c986c5225a88cb3829f050437e0a2d7e5820b72cf08238b
+  languageName: node
+  linkType: hard
+
+"@ai-sdk/provider@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@ai-sdk/provider@npm:2.0.3"
+  dependencies:
+    json-schema: "npm:^0.4.0"
+  checksum: 10c0/f0f663a2d2226d3cb447a3bcc13c70333c1957953237c5583681f26b0d4109f7136ce234499ba730c63bba97243e127b7763d8d962571377d1d9b5193506232c
   languageName: node
   linkType: hard
 
@@ -2774,6 +2808,7 @@ __metadata:
   resolution: "@janhq/web-app@workspace:web-app"
   dependencies:
     "@ai-sdk/anthropic": "npm:^2.0.0"
+    "@ai-sdk/google": "npm:^2.0.0"
     "@ai-sdk/openai": "npm:^2.0.0"
     "@ai-sdk/openai-compatible": "npm:^1.0.28"
     "@ai-sdk/react": "npm:^2.0.109"
@@ -15137,15 +15172,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.8":
-  version: 3.3.8
-  resolution: "nanoid@npm:3.3.8"
-  bin:
-    nanoid: bin/nanoid.cjs
-  checksum: 10c0/4b1bb29f6cfebf3be3bc4ad1f1296fb0a10a3043a79f34fbffe75d1621b4318319211cd420549459018ea3592f0d2f159247a6f874911d6d26eaaadda2478120
-  languageName: node
-  linkType: hard
-
 "nanoid@npm:^5.1.6":
   version: 5.1.6
   resolution: "nanoid@npm:5.1.6"
@@ -16118,25 +16144,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.43, postcss@npm:^8.5.6":
-  version: 8.5.6
-  resolution: "postcss@npm:8.5.6"
+"postcss@npm:^8.4.43, postcss@npm:^8.5.3, postcss@npm:^8.5.6":
+  version: 8.5.14
+  resolution: "postcss@npm:8.5.14"
   dependencies:
     nanoid: "npm:^3.3.11"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10c0/5127cc7c91ed7a133a1b7318012d8bfa112da9ef092dddf369ae699a1f10ebbd89b1b9f25f3228795b84585c72aabd5ced5fc11f2ba467eedf7b081a66fad024
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.5.3":
-  version: 8.5.3
-  resolution: "postcss@npm:8.5.3"
-  dependencies:
-    nanoid: "npm:^3.3.8"
-    picocolors: "npm:^1.1.1"
-    source-map-js: "npm:^1.2.1"
-  checksum: 10c0/b75510d7b28c3ab728c8733dd01538314a18c52af426f199a3c9177e63eb08602a3938bfb66b62dc01350b9aed62087eabbf229af97a1659eb8d3513cec823b3
+  checksum: 10c0/48138207cf5ef5581be1bfe2cb65ccfe0ac75e43888ba045afc8ed6043d7b56aeb3b9a9fe5b353ff554be943cd0cc15d826ccb991525159175971e5ee8ab0237
   languageName: node
   linkType: hard
 
